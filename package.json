@@ -1,8 +1,12 @@
 {
   "name": "@local/dsh-plugin-inspector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <1.0.0"
+  },
+  "keywords": ["deepseek-harness", "cordis-plugin", "plugins", "chinese", "productivity"],
   "description": "Browse every installed DSH plugin and bundle from a dock in the sidebar, with hover-to-Chinese translation.",
   "exports": {
     ".": "./index.js",

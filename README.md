@@ -1,6 +1,6 @@
 # DSH 插件查看器（@local/dsh-plugin-inspector）
 
-[![Release](https://img.shields.io/github/v/release/xvxufyg/dsh-plugin-inspector?label=version)](https://github.com/xvxufyg/dsh-plugin-inspector/releases) [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Platform](https://img.shields.io/badge/platform-DeepSeek%20Harness-orange)](https://github.com/deepseek-ai/deepseek-harness) [![Auto Translation](https://img.shields.io/badge/translation-auto%20CN-blueviolet)](#功能)
+[![Release](https://img.shields.io/github/v/release/xvxufyg/dsh-plugin-inspector?label=version)](https://github.com/xvxufyg/dsh-plugin-inspector/releases) [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Platform](https://img.shields.io/badge/platform-DeepSeek%20Harness-orange)](https://github.com/deepseek-ai/deepseek-harness) [![DSH 兼容](https://img.shields.io/badge/DSH-%3E%3D0.2.1--rc.5%20%3C1.0.0-blue)](https://github.com/deepseek-ai/deepseek-harness) [![Auto Translation](https://img.shields.io/badge/translation-auto%20CN-blueviolet)](#功能)
 
 一个 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 Cordis 插件。在 Web 界面侧边栏底部停靠一个入口，点开即可浏览当前配置里所有已安装的插件与插件包；英文条目悬停可自动翻译成中文，并给出「怎么用」的大白话教程。
 
@@ -11,6 +11,16 @@
 - **怎么用栏目**：常见插件预置中文教程 + 步骤 + 可复制话术；新装插件靠自动翻译也能生成用法说明。
 - **复制原始配置**：每条可复制完整 JSON，方便排错。
 - **中 / EN 切换**：默认中文，可一键切英文。
+
+## 兼容性
+
+| 插件版本 | DeepSeek Harness | 核心包 | 状态 |
+|---|---|---|---|
+| v1.0.1 | `>=0.2.1-rc.5 <1.0.0` | `@deepseek-ai/dsh-agent-preset` `0.2.1-rc.5+` | ✅ 当前推荐 |
+| v1.0.0 | `>=0.2.1-rc.5 <1.0.0` | 同上 | 可用 |
+
+- 已在 Harness **0.2.2-rc.1**（核心 0.2.1-rc.5）实测通过。
+- 依赖的宿主服务：`webServer`、`pluginManager`、`llm`、`agentDefaultModel`。若某服务未挂载，对应功能会优雅降级，不会导致插件崩溃。
 
 ## 安装
 
