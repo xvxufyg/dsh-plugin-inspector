@@ -1,5 +1,7 @@
 # DSH 插件查看器（@local/dsh-plugin-inspector）
 
+[![Release](https://img.shields.io/github/v/release/xvxufyg/dsh-plugin-inspector?label=version)](https://github.com/xvxufyg/dsh-plugin-inspector/releases) [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE) [![Platform](https://img.shields.io/badge/platform-DeepSeek%20Harness-orange)](https://github.com/deepseek-ai/deepseek-harness) [![Auto Translation](https://img.shields.io/badge/translation-auto%20CN-blueviolet)](#功能)
+
 一个 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的 Cordis 插件。在 Web 界面侧边栏底部停靠一个入口，点开即可浏览当前配置里所有已安装的插件与插件包；英文条目悬停可自动翻译成中文，并给出「怎么用」的大白话教程。
 
 ## 功能
