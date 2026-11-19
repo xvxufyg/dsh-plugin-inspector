@@ -1,0 +1,29 @@
+{
+  "name": "@local/dsh-plugin-inspector",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browse every installed DSH plugin and bundle from a dock in the sidebar, with hover-to-Chinese translation.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/en.json",
+    "locale/zh.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

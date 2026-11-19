@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Plugin Inspector",
+    "description": "Docks a panel in the sidebar to browse every installed DSH plugin and bundle, with hover-to-Chinese translation."
+  }
+}
